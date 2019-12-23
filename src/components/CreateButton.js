@@ -1,11 +1,10 @@
 import React from 'react'
 import Ionicon from 'react-ionicons'
-const CreateButton = () => {
-
+const CreateButton = ({onClick}) => {
     return(
         <button className="btn btn-primary"
             style={{width:'100%'}}
-            onClick={()=> {}}
+            onClick={()=> {onClick()}}
         >
             <Ionicon
             fontSize="24px"
